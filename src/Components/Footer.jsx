@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className='bg-black'>
+        <div className='bg-gray-800'>
             <footer className='max-w-screen-xl mx-auto px-8 md:px-12 lg:ps-16 xl:px-24 py-8 space-y-5'>
                 <div className='flex justify-center items-center'>
                     <img src={footerLogo} alt="logo" />
@@ -22,10 +22,10 @@ const Footer = () => {
                 </ul>
                 <hr className='border-dashed border-1' />
                 <div className='flex justify-center space-x-6 text-white'>
-                    <Link><FaFacebook size={30}/></Link>
-                    <Link><FaYoutube size={30}/></Link>
-                    <Link><FaTwitter size={30}/></Link>
-                    <Link><FaLinkedin size={30}/></Link>
+                    <Link className='hover:text-blue-500' target='_blank' to={'https://www.facebook.com/heyiamsifatahamed/'}><FaFacebook size={30}/></Link>
+                    <Link className='hover:text-red-500' target='_blank' to={'https://www.youtube.com/@mdsifatahamed6339'}><FaYoutube size={30}/></Link>
+                    <Link className='hover:text-blue-500' target='_blank' to={'https://www.facebook.com/heyiamsifatahamed/'}><FaTwitter size={30}/></Link>
+                    <Link className='hover:text-blue-500' target='_blank' to={'https://www.facebook.com/heyiamsifatahamed/'}><FaLinkedin size={30}/></Link>
                 </div>
             </footer>
         </div>
