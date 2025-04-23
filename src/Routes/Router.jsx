@@ -33,10 +33,6 @@ const router = createBrowserRouter([
                 Component:Blogs
             },
             {
-                path:'contact',
-                element:<ErrorPage/>
-            },
-            {
                 path:'/details/:lawyerId',
                 hydrateFallbackElement:<LoadSpinner/>,
                 loader:()=>fetch('/LawyerData.json'),

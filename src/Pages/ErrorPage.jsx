@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Navbar from '../Components/Navbar';
 
 const ErrorPage = () => {
     return (
-        <div className='min-h-screen flex items-center justify-center'>
+        <div>
+            <Navbar/>
+            <div className='min-h-screen flex items-center justify-center'>
             <div className='text-center space-y-2'>
                 <h1 className='text-4xl font-semibold'>Not Found This Page</h1>
                 <p className='text-4xl font-semibold'>404</p>
@@ -12,6 +15,8 @@ const ErrorPage = () => {
                 </Link>
             </div>
         </div>
+        </div>
+        
     );
 };
 
