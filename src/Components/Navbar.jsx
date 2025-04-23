@@ -31,7 +31,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-               <Link to={'/contact'} className='bg-[#0EA106] hover:bg-white hover:text-[#0EA106] hover:border hover:border-[#0EA106] text-white font-semibold py-3 px-4 rounded-full'>Contact Now</Link>
+               <Link to={'/contact'} className='bg-[#0c1faf] hover:bg-white hover:text-[#0EA106] hover:border hover:border-[#0EA106] text-white font-semibold py-3 px-4 rounded-full'>Contact Now</Link>
             </div>
             </div>
         </div>

@@ -24,7 +24,7 @@ const Lawyers = () => {
             <div className='text-center space-y-3'>
                 <h1 className=' text-3xl md:text-[40px] font-semibold'>Our Best Lawyers</h1>
             </div>
-            <div className='grid gird-cols-1 md:grid-cols-2 gap-8 object-center my-10'>
+            <div className='grid gird-cols-1 md:grid-cols-2 gap-4 xl:gap-8 object-center my-10'>
                 {
                     lawyers.map( lawyer => <LawyerCard 
                         key={lawyer.id}
