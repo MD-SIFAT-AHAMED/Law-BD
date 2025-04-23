@@ -15,7 +15,7 @@ const LawyerCard = ({lawyer}) => {
                 className="w-full h-full object-cover"
                 alt="Album" />
             </figure>
-            <div className="card-body px-2 pr-2 ">
+            <div className="card-body lg:ml-3 px-2 pr-2 ">
                 <div className='flex w-fit space-x-3 xl:space-x-4'>
                     {available ? <p className='px-2 py-1 text-[#09982F] rounded-2xl bg-[#09982F40]'>Available</p> : <p
                     className='px-2 py-1 text-red-600 rounded-2xl bg-[#f2232320]'>Unavailbale</p>}
