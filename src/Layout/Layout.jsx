@@ -6,7 +6,7 @@ import LoadSpinner from '../Components/LoadSpinner';
 
 const Layout = () => {
 
-    const loccation = useLocation();
+    const location = useLocation();
     const [loading,setLoading]= useState(false);
     
     useEffect(()=>{
@@ -15,7 +15,7 @@ const Layout = () => {
             setLoading(false)
         },100)
         return () => clearTimeout(timeOut);
-    },[loccation])
+    },[location])
 
     return (
         <div>

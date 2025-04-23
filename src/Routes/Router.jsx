@@ -7,6 +7,7 @@ import ContactUs from "../Pages/ContactUs";
 import LawyerDetails from "../Pages/LawyerDetails";
 import ErrorPage from "../Pages/ErrorPage";
 import NotFoundLawyer from "../Components/NotFoundLawyer";
+import LoadSpinner from "../Components/LoadSpinner";
 
 const router = createBrowserRouter([
     {
@@ -16,15 +17,18 @@ const router = createBrowserRouter([
         children:[
             {
                 path:'/',
+                hydrateFallbackElement:<LoadSpinner/>,
                 loader:()=>fetch('/LawyerData.json'),
                 Component:Home           
             },
             {
                 path:'/booking',
+                hydrateFallbackElement:<LoadSpinner/>,
                 Component:MyBooking
             },
             {
                 path:'/blogs',
+                hydrateFallbackElement:<LoadSpinner/>,
                 loader:()=> fetch('/Blog.json'),
                 Component:Blogs
             },
@@ -34,6 +38,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'/details/:lawyerId',
+                hydrateFallbackElement:<LoadSpinner/>,
                 loader:()=>fetch('/LawyerData.json'),
                 errorElement:<NotFoundLawyer/>,
                 Component:LawyerDetails
