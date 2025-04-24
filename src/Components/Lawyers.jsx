@@ -6,7 +6,7 @@ const Lawyers = () => {
 
     const LaywarData = useLoaderData();
     const [lawyers,setLawyers] = useState([]);
-    const [showAll,setShowAll] = useState(false)
+    const [showAll,setShowAll] = useState(false);
 
     useEffect(()=>{
         if(showAll)

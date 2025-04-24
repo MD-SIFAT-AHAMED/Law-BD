@@ -24,7 +24,7 @@ const LawyerCard = ({lawyer}) => {
                 <h2 className="card-title">{name}</h2>
                 <p className='text-base '>{speciality} Expart</p>
                 <p className='text-base '><PiNewspaperClipping className='inline mr-2' size={15}/>License No: {licenseNumber}</p>
-                <Link to={`/details/${id}`}><button className="btn w-full font-semibold border-1 border-blue-500  text-blue-600 py-1 rounded-2xl hover:bg-blue-600 hover:text-white">View Details</button></Link>
+                <Link to={`/details/${licenseNumber}`}><button className="btn w-full font-semibold border-1 border-blue-500  text-blue-600 py-1 rounded-2xl hover:bg-blue-600 hover:text-white">View Details</button></Link>
             </div>
             </div>
         </div>

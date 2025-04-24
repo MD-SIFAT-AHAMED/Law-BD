@@ -10,7 +10,7 @@ const LawyerDetails = () => {
     const lawyerData = useLoaderData();
     const {lawyerId} = useParams();
     const navigate = useNavigate();
-    const existLawyer = lawyerData.find(lawyer => lawyer.id === parseInt(lawyerId));
+    const existLawyer = lawyerData.find(lawyer => lawyer.licenseNumber === lawyerId);
     
     const {name,experience,image,speciality,licenseNumber,fees,availableDays
     } = existLawyer;
@@ -23,9 +23,8 @@ const LawyerDetails = () => {
     const handlerAppointment=(appointment)=>{
 
         const duplicateData = getStoredAppointment();
-        const isDuplicate = duplicateData?.find(data => data.id === appointment.id)
-        console.log(isDuplicate)
-        if(!isDuplicate?.id)
+        const isDuplicate = duplicateData?.find(data => data.licenseNumber === appointment.licenseNumber)
+        if(!isDuplicate?.licenseNumber)
         {
             setStoredAppointment(appointment);
             navigate('/booking');
